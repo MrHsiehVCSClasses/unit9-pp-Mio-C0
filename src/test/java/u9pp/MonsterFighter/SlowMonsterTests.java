@@ -1,3 +1,4 @@
+
 package u9pp.MonsterFighter;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -11,6 +12,8 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 
 import org.mockito.*;
 import org.mockito.junit.jupiter.MockitoExtension;
+
+
 
 @ExtendWith(MockitoExtension.class)
 public class SlowMonsterTests {
@@ -88,7 +91,4 @@ public class SlowMonsterTests {
             () -> assertTrue(s.contains("" + testMonster.getAttackPower()), "2nd takeTurn should return string with monster's attack")
         );
     }
-
-
-
 }

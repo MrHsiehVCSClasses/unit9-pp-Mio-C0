@@ -1,3 +1,4 @@
+
 package u9pp.MonsterFighter;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -12,6 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 
 import org.mockito.*;
 import org.mockito.junit.jupiter.MockitoExtension;
+
 
 @ExtendWith(MockitoExtension.class)
 public class HealingMonsterTests {
@@ -33,7 +35,7 @@ public class HealingMonsterTests {
         target = new Hero("TestHero", MAX_HEALTH, ATTACK);;
         target = Mockito.spy(target);
     }
-
+    
     @Test
     public void healingMonster_isChildOfCombatant() {
         assertTrue( testMonster instanceof Combatant, "HealingMonster class must be a child class of Combatant");        
@@ -88,5 +90,4 @@ public class HealingMonsterTests {
             () -> assertTrue(s.contains("" + testMonster.getHealingPerTurn()), "takeTurn should return a string with the amount healed")
         );
     }
-
 }

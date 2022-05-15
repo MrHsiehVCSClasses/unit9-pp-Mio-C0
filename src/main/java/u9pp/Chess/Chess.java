@@ -1,3 +1,4 @@
+/*
 package u9pp.Chess;
 
 import java.util.*;
@@ -14,13 +15,13 @@ public class Chess {
     }
     
     public void play(Scanner scanner) {
-        /* Your code here */
+        // Your code here 
     }
 
     public static boolean hasWinner(ChessPiece[][] board) {
-        /* Your code here */
+        // Your code here 
     }
-    
+
     public void initializeBoard() {
         board = new ChessPiece[8][8];
         
@@ -149,3 +150,4 @@ public class Chess {
 
     
 }
+*/
